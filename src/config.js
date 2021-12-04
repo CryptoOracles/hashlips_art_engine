@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Crypto Oracles";
+const description = "A unique collection of Crypto Oracles identities to gain access to the Crypto Oracles DAO";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -24,15 +24,21 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 25,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Background color" },
+      { name: "Background feature" },
+      { name: "Body" },
+      { name: "Arm" },
+      { name: "Body feature" },
+      { name: "Eyes" },
+      { name: "Nose" },
+      { name: "Face feature" },
+      { name: "Hood" },
+      { name: "Head top" },
+      { name: "Coin" },
+      { name: "Sphere" },
+      { name: "Hand" },
     ],
   },
 ];
@@ -42,9 +48,9 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
-  smoothing: false,
+  width: 1024,
+  height: 1024,
+  smoothing: true,
 };
 
 const gif = {
@@ -86,13 +92,13 @@ const uniqueDnaTorrance = 10000;
 
 const preview = {
   thumbPerRow: 5,
-  thumbWidth: 50,
+  thumbWidth: 250,
   imageRatio: format.height / format.width,
   imageName: "preview.png",
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 20,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,

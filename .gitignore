@@ -1,3 +1,7 @@
+# ASSETS
+layers/
+layers_template/
+
 # Logs
 
 logs
@@ -80,6 +84,7 @@ typings/
 # Optional REPL history
 
 .node_repl_history
+
 
 # Output of 'npm pack'
 
