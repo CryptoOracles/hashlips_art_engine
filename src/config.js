@@ -7,8 +7,8 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Crypto Oracles";
 const description = "A unique collection of Crypto Oracles identities to gain access to the Crypto Oracles DAO";
-const baseUri = "ipfs://QmWebAMY1eh6nYCyiuAK74oW2XJNn4WPMC2tjiMdU9Jjq6";
-const baseGatewayUri = "https://gateway.pinata.cloud/ipfs/QmWebAMY1eh6nYCyiuAK74oW2XJNn4WPMC2tjiMdU9Jjq6"
+const baseUri = "ipfs://QmWnGkqR8SB7Yd4AdfUiLWccNJzugjhkGyrMHZaZ8QXqfC";
+const baseGatewayUri = "https://gateway.pinata.cloud/ipfs/QmWnGkqR8SB7Yd4AdfUiLWccNJzugjhkGyrMHZaZ8QXqfC"
 
 const solanaMetadata = {
   symbol: "YC",
@@ -25,7 +25,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
       { name: "Background feature" },

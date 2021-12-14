@@ -36,14 +36,14 @@ data.forEach((item) => {
   // Flatten all attributes
   let attributes = item.attributes;
   attributes.forEach((attribute) => {
-    type = attribute.trait_type;
+    type = attribute.trait_type.toLowerCase();
     value = attribute.value;
     item[type] = value;
   });
   delete item.attributes;
 
   fs.writeFileSync(
-    `${basePath}/build/imx_json/${item.edition}.json`,
+    `${basePath}/build/imx_json/${item.edition}`, // Do not include .json in the file
     JSON.stringify(item, null, 2)
   );
 });
