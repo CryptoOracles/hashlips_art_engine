@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Crypto Oracles";
 const description = "A unique collection of Crypto Oracles identities to gain access to the Crypto Oracles DAO";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "ipfs://QmWebAMY1eh6nYCyiuAK74oW2XJNn4WPMC2tjiMdU9Jjq6";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,9 +24,9 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 25,
+    growEditionSizeTo: 10,
     layersOrder: [
-      { name: "Background color" },
+      { name: "Background" },
       { name: "Background feature" },
       { name: "Body" },
       { name: "Arm" },
@@ -91,7 +91,7 @@ const rarityDelimiter = "#";
 const uniqueDnaTorrance = 10000;
 
 const preview = {
-  thumbPerRow: 5,
+  thumbPerRow: 4,
   thumbWidth: 250,
   imageRatio: format.height / format.width,
   imageName: "preview.png",
