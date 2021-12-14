@@ -239,6 +239,17 @@ You might possibly want to update the baseUri and description after you have ran
 npm run update_info
 ```
 
+### Geneate metadata for ImmutableX
+
+This utils is for generating IMX compatible metadata after having run a build and obtained the standard json.   
+Simply run:   
+
+```sh
+npm run generate_imx_json
+```
+
+NOTE: if you run the update command to update the metadata, you should re-generate the IMX metadata by re-running this command.
+
 ### Generate a preview image
 
 Create a preview image collage of your collection, run:
