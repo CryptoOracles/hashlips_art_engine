@@ -8,6 +8,7 @@ const network = NETWORK.eth;
 const namePrefix = "Crypto Oracles";
 const description = "A unique collection of Crypto Oracles identities to gain access to the Crypto Oracles DAO";
 const baseUri = "ipfs://QmWebAMY1eh6nYCyiuAK74oW2XJNn4WPMC2tjiMdU9Jjq6";
+const baseGatewayUri = "https://gateway.pinata.cloud/ipfs/QmWebAMY1eh6nYCyiuAK74oW2XJNn4WPMC2tjiMdU9Jjq6"
 
 const solanaMetadata = {
   symbol: "YC",
@@ -109,6 +110,7 @@ const preview_gif = {
 module.exports = {
   format,
   baseUri,
+  baseGatewayUri,
   description,
   background,
   uniqueDnaTorrance,

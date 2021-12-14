@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const {
   baseUri,
+  baseGatewayUri,
   description,
   namePrefix,
   network,
@@ -23,6 +24,7 @@ data.forEach((item) => {
     item.name = `${namePrefix} #${item.edition}`;
     item.description = description;
     item.image = `${baseUri}/${item.edition}.png`;
+    item.image_url = `${baseGatewayUri}/${item.edition}.png`;
   }
   fs.writeFileSync(
     `${basePath}/build/json/${item.edition}.json`,

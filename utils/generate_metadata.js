@@ -9,6 +9,7 @@ const {
   namePrefix,
   description,
   baseUri,
+  baseGatewayUri,
 } = require(`${basePath}/src/config.js`);
 const console = require("console");
 const canvas = createCanvas(format.width, format.height);
@@ -136,6 +137,7 @@ const saveMetadata = (_loadedImageObject) => {
     name: `${namePrefix} #${shortName}`,
     description: description,
     image: `${baseUri}/${shortName}.png`,
+    image_url: `${baseGatewayUri}/${shortName}.png`,
     edition: Number(shortName),
     attributes: tempAttributes,
     compiler: "HashLips Art Engine",
