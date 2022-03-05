@@ -92,7 +92,8 @@ const rarityDelimiter = "#";
 const uniqueDnaTorrance = 10000;
 
 const preview = {
-  thumbPerRow: 4,
+  size: 25,
+  thumbPerRow: 5,
   thumbWidth: 250,
   imageRatio: format.height / format.width,
   imageName: "preview.png",

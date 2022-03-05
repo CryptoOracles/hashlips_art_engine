@@ -11,16 +11,16 @@ const metadataList = JSON.parse(rawdata);
 
 const saveProjectPreviewImage = async (_data) => {
   // Extract from preview config
-  const { thumbWidth, thumbPerRow, imageRatio, imageName } = preview;
+  const { size, thumbWidth, thumbPerRow, imageRatio, imageName } = preview;
   // Calculate height on the fly
   const thumbHeight = thumbWidth * imageRatio;
   // Prepare canvas
   const previewCanvasWidth = thumbWidth * thumbPerRow;
   const previewCanvasHeight =
-    thumbHeight * Math.ceil(_data.length / thumbPerRow);
+    thumbHeight * Math.ceil(size / thumbPerRow);
   // Shout from the mountain tops
   console.log(
-    `Preparing a ${previewCanvasWidth}x${previewCanvasHeight} project preview with ${_data.length} thumbnails.`
+    `Preparing a ${previewCanvasWidth}x${previewCanvasHeight} project preview with ${size} thumbnails.`
   );
 
   // Initiate the canvas now that we have calculated everything

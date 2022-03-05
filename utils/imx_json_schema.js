@@ -52,16 +52,16 @@ let layers = layerConfigurations[0].layersOrder;
 layers.forEach((layer) => {
 
     // get elements for each layer
-    let elementsNames = [];
-    let elements = getElements(`${layersDir}/${layer.name}/`);
-    elements.forEach((element) => {
-        elementsNames.push(element.name);
-    });
+    // let elementsNames = [];
+    // let elements = getElements(`${layersDir}/${layer.name}/`);
+    // elements.forEach((element) => {
+    //     elementsNames.push(element.name);
+    // });
 
     metadata.push({
         "name": layer.name,
         "type": "enum",
-        "value": elementsNames,
+        // "value": elementsNames, 
         "filterable": true
     })
 });
